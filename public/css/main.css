@@ -1,0 +1,155 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: 'PT Serif', serif;
+}
+
+.navbar{
+	background-color: #D3AEA1;
+}
+
+li > a, a{
+	text-decoration: none;
+	color:#707070;
+	font-size: 18px;
+}
+
+
+li > a:hover{
+	font-weight:bold;
+	color:#707070;
+}
+
+a:hover{
+	color:#707070;
+}
+
+/* Footer */
+.footer{
+	margin-top: 5%;
+	background-color: #D3AEA1;
+	text-align: center;
+}
+
+.footer-container{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+/* Home Page / Page d'Acceuil */
+
+/* Display for all H1's */
+.page-header{
+	text-align: center;
+	margin-top: 8%;
+	margin-bottom: 5%;
+	border:3px solid #D3AEA1;
+	box-shadow:10px 5px 15px #707070 ;
+	color:#707070;
+	font-style: italic;
+}
+
+/* Image with links  Display */
+.media-page-links-container{
+	margin-top: 5%;
+	background-color: #CBCBCB;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.nature-media-container{
+	margin-top: 5%;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.image-links{
+	margin-top: 2%;
+}
+
+/* H3 */
+h3{
+	text-align: center;
+	margin-top:5%;
+}
+
+.welcome-content{
+	text-align: center;
+}
+
+
+/* Page Chambres / Rooms Page */
+#rooms-intro{
+	margin-top: 5%;
+	text-align: center;
+}
+
+.article{
+	display: flex;
+	flex-wrap: wrap;
+	margin:2% 0 5% 0;
+}
+
+.room-all-info-container{
+	background-color: #E3CCC4;
+	border-radius:30px;
+	padding:0%;
+}
+
+.room-title{
+	color:white;
+	padding-top: 2%;
+	margin-bottom: 2%;
+}
+
+.room-content-container{
+	padding-top: 2%;
+}
+
+.room-list-content{
+	margin-top: 2%;
+	text-decoration: none;
+	list-style: none;
+	color:#707070;
+	text-align: justify;
+}
+
+.room-list{
+	padding:1% 0 1% 0;
+	text-align:center;
+}
+
+/* Page XL Chambre Terre Cuite */
+.room-all-info-container-xl{
+	background-color: #E3CCC4;
+	border-radius:30px;
+	padding:0%;
+	margin-top:0;
+}
+
+
+/* Page Table D'hote */
+
+.tabledhote-title{
+	text-align: center;
+	color:#707070;
+	font-style: italic;
+}
+
+.article-tabledhote{
+	display:flex;
+	flex-wrap:wrap;
+	border:2px solid black;
+	margin-top: 5%;
+	justify-content: space-between;
+}
+
+.meal-container{
+	border:2px solid black;
+	padding-left: 1%;
+	padding-right: 1%;
+}

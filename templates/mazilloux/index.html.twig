@@ -1,0 +1,71 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Le Petit Mazilloux{% endblock %}
+
+{% block body %}
+
+	<h1 class="page-header col-xl-6 offset-xl-3 col-lg-6 offset-lg-3 col-md-8 offset-md-2 col-sm-10 offset-sm-1 col-xs-10 offset-xs-1">Les Chambres</h1>
+
+
+    <div class="room-opening-text-info">
+
+        <p id="rooms-intro"><em>Cette maison d’hôte vous propose 2 chambres avec des vues splendides.<br/>
+        <br/>
+        Les chambres sont décorés de façon intemporel affichant un style champêtre, et chaleureux avec un esprit de brocante. <br/>
+        <br/>
+        On n’a utilisé que des matériaux propres et naturels tel que la peinture à la chaux, des pierres et du bois.<br/>
+        <br/>
+        Cette maison d’hôte respectueuse de l’environnement utilise uniquement du linge de lit en coton et des produits d’entretien bio.</em></p>
+
+    </div>
+
+    <section class="article">
+
+        <article class="room-all-info-container col-xl-5 offset-xl-0 col-lg-5 offset-lg-0 col-md-5 offset-md-0 col-sm-10 offset-sm-1 col-10 offset-1" style="margin-top:5%;">
+        <h3 class="room-title"><em>Chambre Terre Cuite</em></h3>
+
+        <img src="Media/Images/Chambres/ChambreTerreCuiteSlide1.jpg" class="img-fluid col-xl-10 offset-xl-1" style="border-radius:10%;" />
+
+            <div class="room-content-container col-xl-10 offset-xl-1">
+
+                <ul class="room-list-content">
+                    <li  class="room-list"><img src="https://img.icons8.com/material-rounded/24/000000/bed.png"/> 2 lits doubles</li>
+                    <li class="room-list"><img src="https://img.icons8.com/material-rounded/24/000000/landscape.png"/> Vue sur le Mont Mezenc</li>
+                    <li class="room-list"><img src="https://img.icons8.com/material-rounded/24/000000/occupied-bed.png"/><sup style="color:black;">+1</sup> Lit supplémentaire pour 10 €</li>
+                    <li class="room-list"><img src="https://img.icons8.com/material/24/000000/euro-pound-exchange--v1.png"/> 70 € par nuit</li>
+                    <li class="room-list"><img src="https://img.icons8.com/android/24/000000/wifi.png"/> Wifi gratuit</li>
+                    <li class="room-list"><img src="https://img.icons8.com/material-rounded/24/000000/cafe.png"/> Petit déjeuner inclus</li>
+                </ul>
+            </div>
+
+                <div class="btn-reserve-container" style="text-align:center; padding-bottom:2%;">
+                    <a href="{{ path('mazilloux_chambreterrecuite') }}" class="btn btn-secondary">Description détaillée</a>
+                </div>
+        </article>
+
+         <article class="room-all-info-container col-xl-5 offset-xl-2 col-lg-5 offset-lg-2 col-md-5 offset-md-2 col-sm-10 offset-sm-1 col-10 offset-1" style="margin-top:5%;">
+
+        <h3 class="room-title"><em>Chambre Porcelaine</em></h3>
+
+        <img src="Media/Images/Chambres/ChambrePorcelaineHomePage.jpg" class="img-fluid col-xl-10 offset-xl-1"  style="border-radius:10%;" />
+
+               <div class="room-content-container col-xl-10 offset-xl-1">
+
+                <ul class="room-list-content">
+                    <li  class="room-list"><img src="https://img.icons8.com/material-rounded/24/000000/bed.png"/> 1 lit double</li>
+                    <li class="room-list"><img src="https://img.icons8.com/material-rounded/24/000000/occupied-bed.png"/> 1 clic clac</li>
+                    <li class="room-list"><img src="https://img.icons8.com/material-rounded/24/000000/landscape.png"/> Vue sur le Mont Bresse</li>
+                    <li class="room-list"><img src="https://img.icons8.com/material/24/000000/euro-pound-exchange--v1.png"/> 48 € par nuit</li>
+                    <li class="room-list"><img src="https://img.icons8.com/android/24/000000/wifi.png"/> Wifi gratuit</li>
+                    <li class="room-list"><img src="https://img.icons8.com/material-rounded/24/000000/cafe.png"/> Petit déjeuner inclus</li>
+                </ul>
+            </div>
+
+                <div class="btn-reserve-container" style="text-align:center; padding-bottom:2%;">
+                    <a href="{{ path('mazilloux_chambreporcelaine') }}" class="btn btn-secondary">Description détaillée</a>
+                </div>
+        </article>
+
+    </section>
+
+{% endblock %}
