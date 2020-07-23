@@ -121,4 +121,12 @@ class MazillouxController extends AbstractController
         return $this->render('mazilloux/feutrage.html.twig');
     }
 
+    /**
+     * @Route("/mazilloux/region", name="mazilloux_region")
+     */
+    public function showRegion()
+    {
+        return $this->render('mazilloux/region.html.twig');
+    }
+
 }

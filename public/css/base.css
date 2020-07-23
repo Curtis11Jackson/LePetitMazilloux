@@ -57,6 +57,11 @@ a:hover{
 	font-style: italic;
 }
 
+.housefront{
+	border:2px solid #CBCBCB;
+	box-shadow:10px 5px 15px #707070 ;
+}
+
 /* Image with links  Display */
 .media-page-links-container{
 	margin-top: 5%;
@@ -74,6 +79,7 @@ a:hover{
 .image-links{
 	margin-top: 2%;
 }
+
 
 /* Footer hidden return to top Div */
 .hidden-div-return-top{
@@ -268,3 +274,9 @@ li.method{
 		display:block;
 	}
   }
+
+/* Page Region */
+.region-info-container{
+	background-color: #80A641;
+	border-radius:30px;
+}
