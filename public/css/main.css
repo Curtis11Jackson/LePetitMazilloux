@@ -28,6 +28,10 @@ a:hover{
 	color:#707070;
 }
 
+.dropdown-item:hover{
+	color:#707070;
+}
+
 /* Footer */
 .footer{
 	margin-top: 5%;
@@ -69,6 +73,11 @@ a:hover{
 
 .image-links{
 	margin-top: 2%;
+}
+
+/* Footer hidden return to top Div */
+.hidden-div-return-top{
+	display: none;
 }
 
 /* H3 */
@@ -205,6 +214,17 @@ h3{
 
 
 /* Page Type Histoire - Raku - Decoration sur Ceramique - Tour de poterie - Pitfiring */
+.page-header-xl{
+	text-align: center;
+	margin-top: 2%;
+	margin-bottom: 5%;
+	border:3px solid #D3AEA1;
+	box-shadow:10px 5px 15px #707070 ;
+	color:#707070;
+	font-style: italic;
+}
+
+
 .histoire-container-xl{
 	background-color: #CBCBCB;
 	border-radius:30px;
@@ -230,3 +250,21 @@ li.method{
 	padding:0;
 }
 
+.btn-previous-container{
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+	right:0;
+}
+
+@media only screen and (max-width: 980px) {
+	.btn-previous-container {
+		display:none;
+	}
+  }
+
+  @media only screen and (max-width: 460px) {
+	.hidden-div-return-top {
+		display:block;
+	}
+  }
