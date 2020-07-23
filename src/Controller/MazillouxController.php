@@ -49,4 +49,76 @@ class MazillouxController extends AbstractController
         return $this->render('mazilloux/tabledhote.html.twig');
     }
 
+    /**
+     * @Route("/mazilloux/stageceramiques", name="mazilloux_stageceramiques")
+     */
+    public function showPageStageCeramiques()
+    {
+        return $this->render('mazilloux/stageceramiques.html.twig');
+    }
+
+    /**
+     * @Route("/mazilloux/stagetextiles", name="mazilloux_stagetextiles")
+     */
+    public function showPageStageTextiles()
+    {
+        return $this->render('mazilloux/stagetextiles.html.twig');
+    }
+
+    /**
+     * @Route("/mazilloux/pitfiring", name="mazilloux_pitfiring")
+     */
+    public function showPageHistoirePitfiring()
+    {
+        return $this->render('mazilloux/pitfiring.html.twig');
+    }
+
+    /**
+     * @Route("/mazilloux/raku", name="mazilloux_raku")
+     */
+    public function showPageHistoireRaku()
+    {
+        return $this->render('mazilloux/raku.html.twig');
+    }
+
+    /**
+     * @Route("/mazilloux/tourdepoterie", name="mazilloux_tourdepoterie")
+     */
+    public function showPageHistoireTourdepoterie()
+    {
+        return $this->render('mazilloux/tourdepoterie.html.twig');
+    }
+
+    /**
+     * @Route("/mazilloux/decorationceramique", name="mazilloux_decorationceramique")
+     */
+    public function showPageHistoireDecorationCeramique()
+    {
+        return $this->render('mazilloux/decorationceramique.html.twig');
+    }
+
+    /**
+     * @Route("/mazilloux/peinturesursoie", name="mazilloux_peinturesursoie")
+     */
+    public function showPageHistoirePeinturesoie()
+    {
+        return $this->render('mazilloux/peinturesursoie.html.twig');
+    }
+
+    /**
+     * @Route("/mazilloux/impressionsurtextiles", name="mazilloux_impressionsurtextiles")
+     */
+    public function showPageHistoireImpressionsurtextiles()
+    {
+        return $this->render('mazilloux/impressionsurtextiles.html.twig');
+    }
+
+    /**
+     * @Route("/mazilloux/feutrage", name="mazilloux_feutrage")
+     */
+    public function showHistoireFeutrage()
+    {
+        return $this->render('mazilloux/feutrage.html.twig');
+    }
+
 }
