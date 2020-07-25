@@ -277,9 +277,20 @@ li.method{
 
 
   /* Page Region */
+  #region-intro{
+	text-align: center;
+  }
+
   .region-info-container{
 	  background-color: #80A641;
+	  box-shadow:10px 5px 15px #707070 ;
 	  border-radius:30px;
+  }
+
+  .intro-region{
+	color:white;
+	text-align: center;
+	padding-top: 2%;
   }
 
   .article-region{
@@ -294,15 +305,27 @@ li.method{
   }
 
   .activity-list-content{
-	margin-top: 2%;
 	text-decoration: none;
 	list-style: none;
 	color:white;
 	text-align: center;
   }
 
+  #header-activity{
+	  text-align: center;
+	  color:#CBCBCB;
+	  margin-top: 2%;
+	  font-size: 22px;
+  }
+
   .activity-list{
-	padding:1% 0 1% 0;
+	padding:6% 0 0 0;
+	text-align:center;
+	color:white;
+  }
+
+  .activity-list{
+	padding:4% 0 0 0;
 	text-align:center;
 	color:white;
   }
