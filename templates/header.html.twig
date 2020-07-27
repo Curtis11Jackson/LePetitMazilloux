@@ -9,22 +9,24 @@
 
 		<link rel="stylesheet" href="../css/bootstrap.min.css">
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-		<link rel="stylesheet" href="../css/main.css">
+		<link rel="stylesheet" href="../css/base.css">
 		<link href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap" rel="stylesheet"> {% block stylesheets %}{% endblock %}
 
 		</head>
 		<body>
 
-			<nav class="navbar navbar-expand-lg">
-				<a class="navbar-brand" style="margin-right:5%; font-size:26px;" href="/">Le Petit Mazilloux</a>
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-					<img src="https://img.icons8.com/ios-filled/30/000000/menu.png"/>
+			<nav class="navbar navbar-expand-lg justify-content-center">
+			<a class="navbar-brand LPM" style="margin-right:0%;" href="{{ path('mazilloux_home') }}">Le Petit Mazilloux</a>
+			<div>
+				
+				<button class="navbar-toggler justify-content-end" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="24" height="24" viewBox="0 0 172 172" style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#cbcbcb"><path d="M0,14.33333v14.33333h172v-14.33333zM0,78.83333v14.33333h172v-14.33333zM0,143.33333v14.33333h172v-14.33333z"></path></g></g></svg>
 				</button>
 
 				<div class="collapse navbar-collapse" id="navbarSupportedContent">
 					<ul class="navbar-nav">
 						<li class="nav-item">
-							<a class="nav-link" href="#">Accueil</a>
+							<a class="nav-link" href="{{ path('mazilloux_home') }}">Accueil</a>
 						</li>
 						<li class="nav-item dropdown">
 							<a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -32,7 +34,7 @@
 							</a>
 							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
 								<a class="dropdown-item" href="{{ path('mazilloux') }}">Les Chambres</a>
-								<a class="dropdown-item" href="#">Le Cottage</a>
+								<a class="dropdown-item" href="{{ path('mazilloux_cottage') }}">Le Cottage</a>
 								<a class="dropdown-item" href="#">L' Appartement</a>
 								<a class="dropdown-item" href="{{ path('mazilloux_tabledhote') }}">La Table d'Hôte</a>
 							</div>
@@ -69,8 +71,7 @@
 
 								<div class="col-xl-4">
 									<h4>Coordonnées</h4>
-									<p>Vanessa GILLETT<br/>
-										Le Petit Mazilloux<br/>
+									<p>Le Petit Mazilloux<br/>
 										Présailles 43150<br/>
 										06-77-97-18-75<br/>
 										gillettvanessa@gmail.com</p>
@@ -90,9 +91,10 @@
 										23 Rue Via Croze<br/>
 										Le Monastier 43150<br/>
 										06-60-47-17-02<br/>
-										<a href="http://aneazimut.fr" target="_blank">Ane Azimut</a>
+										<a href="http://aneazimut.fr">Ane Azimut</a>
 									</p>
 								</div>
+
 
 							</div>
 						</div>

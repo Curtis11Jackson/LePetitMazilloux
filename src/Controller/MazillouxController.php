@@ -18,7 +18,7 @@ class MazillouxController extends AbstractController
     }
 
     /**
-     * @Route("/", name="home")
+     * @Route("/", name="mazilloux_home")
      */
     public function home()
     {
@@ -39,6 +39,14 @@ class MazillouxController extends AbstractController
     public function showPorcelaine()
     {
         return $this->render('mazilloux/chambreporcelaine.html.twig');
+    }
+
+    /**
+     * @Route("/mazilloux/cottage", name="mazilloux_cottage")
+     */
+    public function showCottage()
+    {
+        return $this->render('mazilloux/cottage.html.twig');
     }
 
     /**

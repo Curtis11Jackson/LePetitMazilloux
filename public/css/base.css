@@ -8,24 +8,38 @@ body{
 	font-family: 'PT Serif', serif;
 }
 
+.LPM{
+	position: fixed;
+	left:1%;
+	top:1%;
+	font-size: 20px;
+	font-weight: bold;
+	font-style: italic;
+	color: white;
+}
+
+.LPM:hover{
+	font-size: 26px;
+	color: white;
+}
+
 .navbar{
 	background-color: #D3AEA1;
 }
 
+
 li > a, a{
 	text-decoration: none;
-	color:#707070;
+	color:white;
 	font-size: 18px;
 }
 
-
 li > a:hover{
 	font-weight:bold;
-	color:#707070;
 }
 
 a:hover{
-	color:#707070;
+	color:white;
 }
 
 .dropdown-item:hover{
@@ -111,8 +125,13 @@ h3{
 
 .room-all-info-container{
 	background-color: #E3CCC4;
+	box-shadow:10px 5px 15px #707070 ;
 	border-radius:30px;
 	padding:0%;
+}
+
+.room-all-info-container:hover{
+	box-shadow:15px 10px 25px #707070 ;
 }
 
 .room-title{
@@ -138,10 +157,15 @@ h3{
 	text-align:center;
 }
 
+#extra-padding{
+	padding-top:5%;
+}
+
 /* Page XL Chambre Terre Cuite */
 .room-all-info-container-xl{
 	background-color: #E3CCC4;
 	border-radius:30px;
+	box-shadow:10px 5px 15px #707070 ;
 	padding:0%;
 	margin-top:0;
 }
@@ -169,6 +193,38 @@ h3{
 	padding-right: 1%;
 }
 
+
+/* Page Le Cottage */
+#cottage-intro{
+	text-align: center;
+	margin-top: 5%;
+}
+
+
+.cottage-content-container{
+	border:2px solid black;
+	background-color:#D3AEA1;
+}
+
+.cottage-all-info-container{
+	display:flex;
+	flex-wrap: wrap;
+}
+
+.sm-card{
+	margin-top: 1%;
+	padding-top: 1%;
+	border:1px solid #707070;	 
+}
+
+.cottage-list-content{
+	margin-top: 2%;
+	text-decoration: none;
+	list-style: none;
+	color:#707070;
+	text-align: justify;
+}
+
 /* Page Stage de textiles */
 #stages-intro{
 	margin-top: 5%;
@@ -185,6 +241,7 @@ h3{
 	background-color: #5A291A;
 	border-radius:30px;
 	border:2px solid white;
+	box-shadow:10px 5px 15px #707070 ;
 }
 
 .stage-title-textile{
@@ -211,6 +268,7 @@ h3{
 .article-stages-ceramique-container{
 	background-color: #CBCBCB;
 	border-radius: 30px;
+	/* box-shadow:10px 5px 15px #707070 ; */
 	border:2px solid white ;
 }
 
@@ -233,6 +291,7 @@ h3{
 
 .histoire-container-xl{
 	background-color: #CBCBCB;
+	box-shadow:10px 5px 15px #707070 ;
 	border-radius:30px;
 }
 
@@ -278,5 +337,53 @@ li.method{
 /* Page Region */
 .region-info-container{
 	background-color: #80A641;
+	box-shadow:10px 5px 15px #707070 ;
 	border-radius:30px;
 }
+
+#region-intro{
+	text-align: center;
+}
+
+.intro-region{
+	color:white;
+	text-align: center;
+	padding-top: 2%;
+  }
+
+  .article-region{
+	  display:flex;
+	  flex-wrap:wrap;
+  }
+
+  .region-title{
+	color:white;
+	padding-top: 2%;
+	margin-bottom: 2%;
+  }
+
+  .activity-list-content{
+	text-decoration: none;
+	list-style: none;
+	color:white;
+	text-align: center;
+  }
+
+  #header-activity{
+	  text-align: center;
+	  color:#CBCBCB;
+	  margin-top: 2%;
+	  font-size: 22px;
+  }
+
+  .activity-list{
+	padding:6% 0 0 0;
+	text-align:center;
+	color:white;
+  }
+
+  .activity-list{
+	padding:4% 0 0 0;
+	text-align:center;
+	color:white;
+  }
