@@ -58,6 +58,14 @@ class MazillouxController extends AbstractController
     }
 
     /**
+     * @Route("/mazilloux/appartement", name="mazilloux_appartement")
+     */
+    public function showAppartement()
+    {
+        return $this->render('mazilloux/appartement.html.twig');
+    }
+
+    /**
      * @Route("/mazilloux/stageceramiques", name="mazilloux_stageceramiques")
      */
     public function showPageStageCeramiques()
