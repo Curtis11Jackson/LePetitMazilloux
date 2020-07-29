@@ -2,6 +2,8 @@
 
 namespace App\Controller;
 
+use App\Entity\Slide;
+use App\Repository\SlideRepository;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\Routing\Annotation\Route;
 
@@ -143,6 +145,21 @@ class MazillouxController extends AbstractController
     public function showRegion()
     {
         return $this->render('mazilloux/region.html.twig');
+    }
+
+    /**
+     * @Route("/mazilloux/galleriedimages", name="mazilloux_gallerie")
+     */
+    public function showGallerie(SlideRepository $repo)
+    {
+        $repo = $this->getDoctrine()->getRepository(Slide::class);
+
+        $slides = $repo->findAll();
+
+
+        return $this->render('mazilloux/galleriedimages.html.twig', [
+            'slides' => $slides
+        ]);
     }
 
 }
