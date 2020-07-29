@@ -148,7 +148,7 @@ class MazillouxController extends AbstractController
     }
 
     /**
-     * @Route("/mazilloux/galleriedimages", name="mazilloux_gallerie")
+     * @Route("/mazilloux/galleriephotos", name="mazilloux_gallerie")
      */
     public function showGallerie(SlideRepository $repo)
     {
@@ -157,7 +157,7 @@ class MazillouxController extends AbstractController
         $slides = $repo->findAll();
 
 
-        return $this->render('mazilloux/galleriedimages.html.twig', [
+        return $this->render('mazilloux/galleriephotos.html.twig', [
             'slides' => $slides
         ]);
     }
