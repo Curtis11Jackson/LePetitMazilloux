@@ -273,7 +273,7 @@ h3{
 	background-color: #5A291A;
 	border-radius:30px;
 	border:2px solid white;
-	box-shadow:10px 5px 15px #707070 ;
+
 }
 
 .stage-title-textile{
@@ -365,6 +365,65 @@ li.method{
 		display:block;
 	}
   }
+
+  /* Page Type Histoire - Peinture sur soie - Impression sur textile - Feutrage */
+.page-header-xl{
+	text-align: center;
+	margin-top: 2%;
+	margin-bottom: 5%;
+	border:3px solid #D3AEA1;
+	box-shadow:10px 5px 15px #707070 ;
+	color:#707070;
+	font-style: italic;
+}
+
+
+.histoire-container-xl-textile{
+	background-color: #5A291A;
+	box-shadow:10px 5px 15px #707070 ;
+	border-radius:30px;
+	color:white;
+}
+
+.histoire-title-textile{
+	text-align: center;
+	color:white;
+	font-style: italic;
+}
+
+.histoire-details{
+	text-align: center;
+}
+
+ul.method-list{
+	text-align:center;
+	padding:0;
+}
+
+li.method{
+	list-style:upper-roman;
+	padding:0;
+}
+
+.btn-previous-container{
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+	right:0;
+}
+
+@media only screen and (max-width: 980px) {
+	.btn-previous-container {
+		display:none;
+	}
+  }
+
+  @media only screen and (max-width: 460px) {
+	.hidden-div-return-top {
+		display:block;
+	}
+  }
+
 
 /* Page Region */
 .region-info-container{

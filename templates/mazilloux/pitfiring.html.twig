@@ -6,7 +6,16 @@
 {% block body %}
 
 	<div class="btn-previous-container sticky" style="padding-bottom:2%;margin-top:2%;">
-		<a href="{{ path('mazilloux_stageceramiques') }}" class="btn btn-secondary"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 172 172" style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M58.28516,39.7526c-1.67351,-0.16018 -3.36825,0.42749 -4.60235,1.65729l-40.53646,40.53646c-2.24173,2.24173 -2.24173,5.86556 0,8.10729l40.53646,40.53646c1.09507,1.09507 2.56298,1.67968 4.05364,1.67968c0.7396,0 1.48386,-0.13312 2.19479,-0.42552c2.14427,-0.88293 3.53854,-2.98035 3.53854,-5.29661v-23.34766h86c6.33534,0 11.46667,-5.13133 11.46667,-11.46667v-11.46667c0,-6.33533 -5.13133,-11.46667 -11.46667,-11.46667h-86v-23.33646c0,-2.31627 -1.39427,-4.41368 -3.53854,-5.29661c-0.53607,-0.2236 -1.08826,-0.36093 -1.64609,-0.41432z"></path></g></g></svg></a>
+		<a href="{{ path('mazilloux_stageceramique') }}" class="btn btn-secondary">
+			<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewbox="0 0 172 172" style=" fill:#000000;">
+				<g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal">
+					<path d="M0,172v-172h172v172z" fill="none"></path>
+					<g fill="#ffffff">
+						<path d="M58.28516,39.7526c-1.67351,-0.16018 -3.36825,0.42749 -4.60235,1.65729l-40.53646,40.53646c-2.24173,2.24173 -2.24173,5.86556 0,8.10729l40.53646,40.53646c1.09507,1.09507 2.56298,1.67968 4.05364,1.67968c0.7396,0 1.48386,-0.13312 2.19479,-0.42552c2.14427,-0.88293 3.53854,-2.98035 3.53854,-5.29661v-23.34766h86c6.33534,0 11.46667,-5.13133 11.46667,-11.46667v-11.46667c0,-6.33533 -5.13133,-11.46667 -11.46667,-11.46667h-86v-23.33646c0,-2.31627 -1.39427,-4.41368 -3.53854,-5.29661c-0.53607,-0.2236 -1.08826,-0.36093 -1.64609,-0.41432z"></path>
+					</g>
+				</g>
+			</svg>
+		</a>
 	</div>
 
 	<h1 class="page-header-xl col-xl-6 offset-xl-3 col-lg-8 offset-lg-2 col-md-10 offset-md-1 col-sm-12 offset-sm-0 col-xs-10 offset-xs-1" style="margin-bottom:0;">Le Pit firing</h1>
@@ -14,12 +23,31 @@
 	<section class="article">
 
 		<article class="histoire-container-xl col-xl-10 offset-xl-1 col-lg-10 offset-lg-1 col-md-10 offset-md-1 col-sm-10 offset-sm-1 col-10 offset-1" style="margin-top:5%;">
-			<h3 class="stage-title-ceramique">
-				<em>Le Pit firing</em>
-			</h3>
 
-			<div class="histoire-image-container-xl col-12">
-				<img src="../Media/Images/Stages/raku.jpeg" class="img-fluid col-xl-10 offset-xl-1" style="border-radius:5%;"/>
+			<div class="slideshow-container col-xl-10 offset-xl-1 col-lg-10 offset-lg-1 col-md-10 offset-md-1 col-sm-10 offset-sm-1 col-10 offset-1" style="margin-top:5%;">
+				<div id="carouselExampleControls" class="carousel slide carousel-fade" data-ride="carousel">
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<img src="../Media/Images/Stages/Ceramique/pitfiring-1.jpeg" class="d-block w-100" style="border-radius:30px;" alt="Pit Firing">
+						</div>
+						<div class="carousel-item">
+							<img src="../Media/Images/Stages/Ceramique/pitfiring-2.jpeg" class="d-block w-100" style="border-radius:30px;" alt="Pit Firing">
+						</div>
+						<div class="carousel-item">
+							<img src="../Media/Images/Stages/Ceramique/pitfiring-3.jpeg" class="d-block w-100" style="border-radius:30px;" alt="Pit Firing">
+						</div>
+					</div>
+				</div>
+
+
+				<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="sr-only">Previous</span>
+				</a>
+				<a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="sr-only">Next</span>
+				</a>
 			</div>
 
 			<hr class="col-xl-10 offset-xl-1 col-lg-10 offset-lg-1 col-md-10 offset-md-1 col-sm-10 offset-sm-1 col-10 offset-1">
@@ -27,9 +55,9 @@
 			<div class="histoire-content-xl">
 				<h4 class="histoire-title">Histoire</h4>
 				<p class="histoire-details">Le Pit firing est une technique de cuisson au four à bois à feu ouvert depuis plus
-										de 30 000 ans.<br/>
+															de 30 000 ans.<br/>
 					L'Homme préhistorique a façonné la terre.
-										Il a découvert que le feu durcit la terre et la fait cuire.
+															Il a découvert que le feu durcit la terre et la fait cuire.
 				</p>
 
 			</div>
@@ -41,24 +69,24 @@
 					lisse les formes.
 					<br/>
 					Après le séchage, la terre est cuite jusqu'à 900°c dans le four
-					électrique. 
-                    <br/>
-                    Ensuite la poterie est préparé avec des différent composés organiques
+					électrique.
+					<br/>
+					Ensuite la poterie est préparé avec des différent composés organiques
 					oxyde, tel que les peaux de bananes et l'oxyde de cuivre pour obtenir des
 					différents tons et couleurs à la cuisson.
-					
+										
 					Puis elle est placé dans un fossé creusé dans la terre, à feu ouvert.
 					On la laisse la nuit.
-                    <br/>
-                    La cuisson à la fosse est un procès atmosphérique
+					<br/>
+					La cuisson à la fosse est un procès atmosphérique
 					où tous les couleurs et des motifs de décoration sont dérivés par la vapeur et la
 					fumé du feu.
-                    <br/>
-                    Le rendu est très aléatoire. Le résultat est une poterie qui reste
+					<br/>
+					Le rendu est très aléatoire. Le résultat est une poterie qui reste
 					brute sans email, mais soyeux et satiné, un aspect accentué par le polissage
 					soigné des pièces.
 					<br/>
-                    <br/>
+					<br/>
 					N'hésitez pas de nous contacter si vous avez plus des questions sur nos méthodes.
 				</p>
 
@@ -76,22 +104,12 @@
 							<g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal">
 								<path d="M0,172v-172h172v172z" fill="none"></path>
 								<g fill="#ffffff">
-									<path d="M54.13073,17.2c-31.2524,0.53893 -34.44622,22.21004 -28.17396,47.09844c-1.21547,0.69947 -3.21443,2.91979 -2.7099,6.86432c0.94027,7.35587 4.12925,9.21786 6.15885,9.37266c0.774,6.86853 8.1476,15.65272 10.7276,16.93125v11.46667c-5.73333,17.2 -40.13333,0 -40.13333,45.86667h68.8c0,-20.34187 11.40611,-29.10285 20.91771,-34.14245c-8.93253,-3.1304 -18.18291,-3.51982 -20.91771,-11.72422v-11.46667c2.58,-1.27853 9.94787,-10.05725 10.72761,-16.92005c0.45867,-1.62253 0.81745,-7.42717 0.81745,-8.73437c0,-7.16093 -0.10508,-21.96189 4.37839,-33.54896c-1.5652,-7.78587 -5.65665,-14.35224 -14.42292,-15.21797c-2.34493,-3.88147 -8.35526,-5.84531 -16.16979,-5.84531zM126.8388,22.93333c-6.44427,0 -11.42188,5.73333 -11.42188,5.73333c-36.93413,0 -16.43066,62.79917 -27.27812,71.82344c0,0 5.76746,8.54401 26.52786,8.54401v7.31224c-5.73333,15.52013 -34.4,9.78698 -34.4,38.45364h91.73333c0,-28.66667 -28.66667,-22.93351 -34.4,-38.45364v-7.37943c20.8636,0 25.69922,-8.26406 25.69922,-8.26406c-11.6788,-9.58613 8.69532,-77.76953 -36.46042,-77.76953z"></path>
-								</g>
-							</g>
-						</svg>
-						6 personnes</li>
-					<li class="stage-list">
-						<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewbox="0 0 172 172" style=" fill:#000000;">
-							<g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal">
-								<path d="M0,172v-172h172v172z" fill="none"></path>
-								<g fill="#ffffff">
 									<path d="M86,34.4c-18.24347,0 -25.8,11.70173 -25.8,25.8c0,4.7472 2.27317,9.51823 2.27317,9.51823c-0.9116,0.52747 -2.42762,2.20384 -2.04922,5.16224c0.7052,5.51547 3.09968,6.90642 4.62474,7.02109c0.57907,5.14853 6.11917,11.74097 8.0513,12.69844v7.69297c-4.3,12.9 -38.7,10.94036 -38.7,41.04036h103.2c0,-30.1 -34.4,-28.14036 -38.7,-41.04036v-7.69297c1.93787,-0.95747 7.47224,-7.54991 8.0513,-12.69844c1.52507,-0.11467 3.91954,-1.50562 4.62474,-7.02109c0.37839,-2.96413 -1.13762,-4.63478 -2.04922,-5.16224c0,0 2.27317,-4.30663 2.27317,-9.51823c0,-10.4404 -4.09933,-19.35 -12.9,-19.35c0,0 -3.05587,-6.45 -12.9,-6.45zM129,45.85547c-2.93547,0 -5.43323,0.53096 -7.72656,1.28776c1.2556,3.89293 1.99323,8.23504 1.99323,13.05677c0,3.05013 -0.47846,5.84647 -1.0862,8.18567c0.83133,2.4596 1.11692,5.16439 0.76146,7.93933c-0.8084,6.3124 -3.25922,10.60272 -6.33802,13.30312c-0.8944,2.16721 -2.1191,4.22045 -3.43776,6.18126c1.62827,3.34253 4.01172,6.31831 5.08386,6.92031v0.06719c11.6788,5.47533 30.81667,14.67912 30.81667,40.53646h22.93333c0,-28.42587 -28.66667,-24.34427 -32.25,-36.52761v-4.08724c1.61107,-0.90587 6.22595,-7.1311 6.70755,-11.99297c1.26707,-0.10893 3.26728,-1.41757 3.85208,-6.62917c0.31533,-2.79787 -0.94528,-4.3723 -1.70208,-4.8711c0,0 1.89245,-4.07846 1.89245,-8.99192c0,-9.86133 -3.41707,-18.275 -10.75,-18.275c0,0 -2.5456,-6.10286 -10.75,-6.10286zM43,45.86667c-8.2044,0 -10.75,6.09167 -10.75,6.09167c-7.33293,0 -10.75,8.42486 -10.75,18.2862c0,4.9192 1.89245,8.98073 1.89245,8.98073c-0.76253,0.49307 -2.01742,2.07323 -1.70208,4.8711c0.5848,5.2116 2.58502,6.53143 3.85208,6.64036c0.4816,4.86187 5.09649,11.0871 6.70755,11.99297v4.07604c-3.58333,12.1776 -32.25,8.10174 -32.25,36.52761h22.93333c0,-25.85733 19.13787,-35.05539 30.81667,-40.53646v-0.07839c1.07213,-0.602 3.45559,-3.56085 5.08386,-6.90911c-1.31867,-1.9608 -2.54336,-4.02525 -3.43776,-6.19245c-3.0788,-2.69467 -5.53535,-6.98526 -6.33802,-13.29192c-0.3612,-2.80933 -0.06468,-5.55757 0.78385,-8.04011c-0.6192,-2.3564 -1.10859,-5.15516 -1.10859,-8.08489c0,-4.74147 0.67125,-9.10023 1.89245,-13.07917c-2.26467,-0.7396 -4.73045,-1.25417 -7.62578,-1.25417z"></path>
 								</g>
 							</g>
 						</svg>6 personnes
 					</li>
-					<li class="stage-list" style="padding-top:4%;">
+					<li class="stage-list" style="padding-top:2%;">
 						<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewbox="0 0 172 172" style=" fill:#000000;">
 							<g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal">
 								<path d="M0,172v-172h172v172z" fill="none"></path>
@@ -111,17 +129,7 @@
 							</g>
 						</svg>
 						Durée 2 jours</li>
-					<li class="stage-list">
-						<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewbox="0 0 172 172" style=" fill:#000000;">
-							<g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal">
-								<path d="M0,172v-172h172v172z" fill="none"></path>
-								<g fill="#ffffff">
-									<path d="M86,17.2c-2.06765,-0.02924 -3.99087,1.05709 -5.03322,2.843c-1.04236,1.78592 -1.04236,3.99474 0,5.78066c1.04236,1.78592 2.96558,2.87225 5.03322,2.843c29.79739,0 54.19076,22.58333 57.05339,51.6112c-3.05228,0.14921 -5.45106,2.66621 -5.45339,5.72214c0.00232,3.05592 2.40111,5.57292 5.45339,5.72214c-2.67683,27.14387 -24.18738,48.65442 -51.33125,51.33125c-0.14921,-3.05228 -2.66621,-5.45106 -5.72214,-5.45339c-3.05592,0.00232 -5.57292,2.40111 -5.72214,5.45339c-27.14387,-2.67683 -48.65442,-24.18738 -51.33125,-51.33125c3.05228,-0.14921 5.45106,-2.66621 5.45339,-5.72214c-0.00732,-3.03927 -2.38506,-5.54474 -5.41979,-5.71094c1.75142,-17.73646 11.56628,-33.00331 25.71042,-42.24974l6.09166,7.82734l8.01771,-26.39349l-27.78203,1.00781l6.57318,8.43203c-18.33919,12.36786 -30.39115,33.3526 -30.39115,57.08698c0,37.92867 30.87133,68.8 68.8,68.8c37.92867,0 68.8,-30.87133 68.8,-68.8c0,-37.92867 -30.87133,-68.8 -68.8,-68.8zM85.91042,45.78828c-3.16203,0.04943 -5.68705,2.6496 -5.64375,5.81172v31.53333l-20.63776,15.47552c-2.53562,1.89862 -3.05201,5.49328 -1.15339,8.0289c1.89862,2.53562 5.49328,3.05201 8.0289,1.15339l22.93333,-17.2c1.44572,-1.0833 2.29637,-2.78459 2.29558,-4.59114v-34.4c0.02122,-1.54972 -0.58581,-3.04203 -1.68279,-4.1369c-1.09698,-1.09487 -2.59045,-1.69903 -4.14013,-1.67482z"></path>
-								</g>
-							</g>
-						</svg>
-						Durée 2 jours</li>
-					<li class="stage-list" style="padding-top:4%;">
+					<li class="stage-list" style="padding-top:2%;">
 						<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewbox="0 0 172 172" style=" fill:#000000;">
 							<g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal">
 								<path d="M0,172v-172h172v172z" fill="none"></path>
@@ -131,7 +139,7 @@
 							</g>
 						</svg>
 						Dès 9 ans</li>
-					<li class="stage-list" style="padding-top:4%;">
+					<li class="stage-list" style="padding-top:2%;">
 						<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewbox="0 0 172 172" style=" fill:#000000;">
 							<g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal">
 								<path d="M0,172v-172h172v172z" fill="none"></path>
@@ -141,21 +149,11 @@
 							</g>
 						</svg>
 						Hébergement sur place</li>
-					<li class="stage-list">
-						<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewbox="0 0 172 172" style=" fill:#000000;">
-							<g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal">
-								<path d="M0,172v-172h172v172z" fill="none"></path>
-								<g fill="#ffffff">
-									<path d="M116.99308,128.25246c-4.71677,2.85123 -12.72138,5.70908 -21.87046,5.70908c-13.01246,0 -24.72831,-5.13354 -32.30954,-14.69938c-4.57785,-5.27908 -7.72015,-12.42369 -9.00354,-21.26846h-9.15569v-7.87892h8.00462c0,-0.71446 0,-2.39477 0,-3.10923c0,-1.71338 0.13892,-3.56569 0.28446,-5.14015h-8.28908v-8.85138h9.57908c1.71338,-8.71246 5.57677,-16.13492 10.72354,-21.55292c7.72015,-8.56692 18.15262,-13.42262 30.88062,-13.42262c8.58015,0 15.72477,2.14338 20.44154,4.42569l-3.57231,13.27708c-3.71785,-1.99785 -9.57908,-3.85677 -16.00923,-3.85677c-7.15123,0 -13.43585,2.56677 -18.15923,7.85246c-3.00338,3.14231 -5.14677,7.85246 -6.29123,13.27708h37.45631v8.85138h-39.17631c-0.28446,1.57446 -0.28446,3.28785 -0.28446,4.99462c0,0.86 0,2.40138 0,3.25477h39.45415v7.87892h-37.88631c0.99892,6.13908 3.14231,10.71031 6.14569,13.99154c4.86231,5.27908 11.72246,7.70692 19.15815,7.70692c7.00569,0 13.58138,-2.42785 16.86923,-4.28015z"></path>
-								</g>
-							</g>
-						</svg>
-						150 € / personne</li>
 				</ul>
 			</div>
 
 			<div class="btn-reserve-container" style="text-align:center; padding-bottom:2%;">
-				<a href="{{ path('mazilloux_chambreporcelaine') }}" class="btn btn-secondary">Demande de réservation</a>
+				<a href="" class="btn btn-secondary">Demande de réservation</a>
 			</div>
 		</article>
 

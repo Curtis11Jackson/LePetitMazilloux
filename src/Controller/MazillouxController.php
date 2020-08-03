@@ -68,19 +68,19 @@ class MazillouxController extends AbstractController
     }
 
     /**
-     * @Route("/mazilloux/stageceramiques", name="mazilloux_stageceramiques")
+     * @Route("/mazilloux/stageceramique", name="mazilloux_stageceramique")
      */
     public function showPageStageCeramiques()
     {
-        return $this->render('mazilloux/stageceramiques.html.twig');
+        return $this->render('mazilloux/stageceramique.html.twig');
     }
 
     /**
-     * @Route("/mazilloux/stagetextiles", name="mazilloux_stagetextiles")
+     * @Route("/mazilloux/stagetextile", name="mazilloux_stagetextile")
      */
     public function showPageStageTextiles()
     {
-        return $this->render('mazilloux/stagetextiles.html.twig');
+        return $this->render('mazilloux/stagetextile.html.twig');
     }
 
     /**
@@ -124,11 +124,11 @@ class MazillouxController extends AbstractController
     }
 
     /**
-     * @Route("/mazilloux/impressionsurtextiles", name="mazilloux_impressionsurtextiles")
+     * @Route("/mazilloux/impressionsurtextile", name="mazilloux_impressionsurtextile")
      */
     public function showPageHistoireImpressionsurtextiles()
     {
-        return $this->render('mazilloux/impressionsurtextiles.html.twig');
+        return $this->render('mazilloux/impressionsurtextile.html.twig');
     }
 
     /**
