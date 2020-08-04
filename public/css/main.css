@@ -58,6 +58,10 @@ a:hover{
 	flex-wrap: wrap;
 }
 
+.reserve-btn:hover{
+	font-style: bold;
+}
+
 /* Home Page / Page d'Acceuil */
 
 /* Display for all H1's */

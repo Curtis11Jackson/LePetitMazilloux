@@ -162,4 +162,12 @@ class MazillouxController extends AbstractController
         ]);
     }
 
+        /**
+     * @Route("/mazilloux/contact", name="mazilloux_contact")
+     */
+    public function contact()
+    {
+        return $this->render('mazilloux/contact.html.twig');
+    }
+
 }
