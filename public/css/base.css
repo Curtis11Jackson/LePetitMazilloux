@@ -71,7 +71,6 @@ a:hover{
 }
 
 .housefront{
-	border:2px solid #CBCBCB;
 	box-shadow:10px 5px 15px #707070 ;
 }
 
@@ -81,6 +80,7 @@ a:hover{
 	background-color: #CBCBCB;
 	display: flex;
 	flex-wrap: wrap;
+	box-shadow:10px 5px 15px #707070 ;
 }
 
 .nature-media-container{
@@ -226,6 +226,20 @@ h3{
 	flex-wrap:wrap;
 	margin-top: 5%;
 	justify-content: space-between;
+}
+
+#recette-box-container{
+	margin-bottom:1%;
+	border:1px solid grey; 
+	box-shadow:10px 5px 15px #707070 ;
+}
+
+#recette-box-container:hover{
+	box-shadow:15px 10px 25px #707070 ;
+}
+
+.ingredient-liste, .realisation-liste{
+	list-style: none;
 }
 
 
