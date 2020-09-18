@@ -44,6 +44,14 @@ class MazillouxController extends AbstractController
     }
 
     /**
+ * @Route("/mazilloux/chambresremastered", name="mazilloux_chambresremastered")
+ */
+    public function showRemasteredRoomsPege()
+    {
+        return $this->render('mazilloux/chambresremasteredpage.html.twig');
+    }
+
+    /**
      * @Route("/mazilloux/cottage", name="mazilloux_cottage")
      */
     public function showCottage()

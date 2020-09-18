@@ -6,6 +6,7 @@
 
 body{
 	font-family: 'PT Serif', serif;
+	background-color: snow;
 }
 
 .LPM{
@@ -169,7 +170,8 @@ h3{
 	background-color: #E3CCC4;
 	box-shadow:10px 5px 15px #707070 ;
 	border-radius:30px;
-	padding:0%;
+	padding:2%;
+
 }
 
 .room-all-info-container:hover{
@@ -195,7 +197,7 @@ h3{
 }
 
 .room-list{
-	padding:1% 0 1% 0;
+	/* padding:1% 0 1% 0; */
 	text-align:center;
 }
 
