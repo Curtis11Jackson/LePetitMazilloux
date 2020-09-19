@@ -75,6 +75,14 @@ class MazillouxController extends AbstractController
         return $this->render('mazilloux/appartement.html.twig');
     }
 
+        /**
+     * @Route("/mazilloux/appartementremastered", name="mazilloux_appartementremastered")
+     */
+    public function showAppartementremastered()
+    {
+        return $this->render('mazilloux/appartementremastered.html.twig');
+    }
+
     /**
      * @Route("/mazilloux/stageceramique", name="mazilloux_stageceramique")
      */
