@@ -28,30 +28,6 @@ class MazillouxController extends AbstractController
     }
 
     /**
-     * @Route("/mazilloux/chambreterrecuite", name="mazilloux_chambreterrecuite")
-     */
-    public function showTerreCuite()
-    {
-        return $this->render('mazilloux/chambreterrecuite.html.twig');
-    }
-    
-    /**
-     * @Route("/mazilloux/chambreporcelaine", name="mazilloux_chambreporcelaine")
-     */
-    public function showPorcelaine()
-    {
-        return $this->render('mazilloux/chambreporcelaine.html.twig');
-    }
-
-    /**
- * @Route("/mazilloux/chambresremastered", name="mazilloux_chambresremastered")
- */
-    public function showRemasteredRoomsPege()
-    {
-        return $this->render('mazilloux/chambresremasteredpage.html.twig');
-    }
-
-    /**
      * @Route("/mazilloux/cottage", name="mazilloux_cottage")
      */
     public function showCottage()
@@ -73,14 +49,6 @@ class MazillouxController extends AbstractController
     public function showAppartement()
     {
         return $this->render('mazilloux/appartement.html.twig');
-    }
-
-        /**
-     * @Route("/mazilloux/appartementremastered", name="mazilloux_appartementremastered")
-     */
-    public function showAppartementremastered()
-    {
-        return $this->render('mazilloux/appartementremastered.html.twig');
     }
 
     /**
