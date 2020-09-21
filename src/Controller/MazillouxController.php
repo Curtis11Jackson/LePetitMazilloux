@@ -44,11 +44,11 @@ class MazillouxController extends AbstractController
     }
 
     /**
-     * @Route("/mazilloux/appartement", name="mazilloux_appartement")
+     * @Route("/mazilloux/appartements", name="mazilloux_appartements")
      */
     public function showAppartement()
     {
-        return $this->render('mazilloux/appartement.html.twig');
+        return $this->render('mazilloux/appartements.html.twig');
     }
 
     /**
