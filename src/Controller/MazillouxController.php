@@ -68,62 +68,6 @@ class MazillouxController extends AbstractController
     }
 
     /**
-     * @Route("/mazilloux/pitfiring", name="mazilloux_pitfiring")
-     */
-    public function showPageHistoirePitfiring()
-    {
-        return $this->render('mazilloux/pitfiring.html.twig');
-    }
-
-    /**
-     * @Route("/mazilloux/raku", name="mazilloux_raku")
-     */
-    public function showPageHistoireRaku()
-    {
-        return $this->render('mazilloux/raku.html.twig');
-    }
-
-    /**
-     * @Route("/mazilloux/tourdepoterie", name="mazilloux_tourdepoterie")
-     */
-    public function showPageHistoireTourdepoterie()
-    {
-        return $this->render('mazilloux/tourdepoterie.html.twig');
-    }
-
-    /**
-     * @Route("/mazilloux/decorationceramique", name="mazilloux_decorationceramique")
-     */
-    public function showPageHistoireDecorationCeramique()
-    {
-        return $this->render('mazilloux/decorationceramique.html.twig');
-    }
-
-    /**
-     * @Route("/mazilloux/peinturesursoie", name="mazilloux_peinturesursoie")
-     */
-    public function showPageHistoirePeinturesoie()
-    {
-        return $this->render('mazilloux/peinturesursoie.html.twig');
-    }
-
-    /**
-     * @Route("/mazilloux/impressionsurtextile", name="mazilloux_impressionsurtextile")
-     */
-    public function showPageHistoireImpressionsurtextiles()
-    {
-        return $this->render('mazilloux/impressionsurtextile.html.twig');
-    }
-
-    /**
-     * @Route("/mazilloux/feutrage", name="mazilloux_feutrage")
-     */
-    public function showHistoireFeutrage()
-    {
-        return $this->render('mazilloux/feutrage.html.twig');
-    }
-
-    /**
      * @Route("/mazilloux/region", name="mazilloux_region")
      */
     public function showRegion()
@@ -131,20 +75,6 @@ class MazillouxController extends AbstractController
         return $this->render('mazilloux/region.html.twig');
     }
 
-    /**
-     * @Route("/mazilloux/galleriephotos", name="mazilloux_gallerie")
-     */
-    public function showGallerie(SlideRepository $repo)
-    {
-        $repo = $this->getDoctrine()->getRepository(Slide::class);
-
-        $slides = $repo->findAll();
-
-
-        return $this->render('mazilloux/galleriephotos.html.twig', [
-            'slides' => $slides
-        ]);
-    }
 
         /**
      * @Route("/mazilloux/contact", name="mazilloux_contact")

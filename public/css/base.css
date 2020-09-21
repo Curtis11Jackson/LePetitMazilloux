@@ -256,7 +256,8 @@ h3{
 }
 
 .article-stages-textiles-container{
-	background-color: #5A291A;
+	background-image: url("../Media/Images/adam-niescioruk-bWiH0PDTB-g-unsplash.jpg");
+	background-size: cover;
 	border-radius:30px;
 	border:2px solid white;
 
@@ -267,7 +268,7 @@ h3{
 }
 
 .stage-list{
-	color:#707070;
+	color:white;
 	padding:1% 0 1% 0;
 	text-align:center;
 	list-style: none;
@@ -295,7 +296,7 @@ h3{
 
 
 .article-stages-ceramique-container{	
-	background-image: url("../Media/Images/adam-niescioruk-bWiH0PDTB-g-unsplash.jpg");
+	background-image: url("../Media/Images/annie-spratt-ctXf1GVyf9A-unsplash.jpg");
 	background-size: cover;
 	border-radius: 30px;
 	/* box-shadow:10px 5px 15px #707070 ; */
